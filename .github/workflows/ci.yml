@@ -12,10 +12,15 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '16'
+          
+      - name: Coveralls GitHub Action
+        uses: coverallsapp/github-action@v2.3.4
 
       - run: npm ci
 
       - run: npm test  # Suorita Mocha-testit
+
+            
 
       - run: npm run coverage  # Luo ja lähetä kattavuusraportti Coverallsille
         env:
