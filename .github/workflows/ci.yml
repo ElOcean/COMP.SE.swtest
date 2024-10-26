@@ -1,10 +1,11 @@
 name: CI-pipeline
 
-on: [push]
+on: [push, pull_request]
 
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v4
 
@@ -13,17 +14,10 @@ jobs:
         with:
           node-version: '16'
 
-      - name: Coveralls GitHub Action
-        uses: coverallsapp/github-action@v2.3.4
-
       - run: npm ci
 
-      - run: npm test  # Suorita Mocha-testit
+      - run: npm test  # Suorittaa Mocha-testit
 
-            
-
-      - run: npm run coverage  # Luo ja lähetä kattavuusraportti Coverallsille
-
-      - uses: coverallsapp/github-action@v2.3.4
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+      - run: npm run coverage  # Luo ja lähettää kattavuusraportin Coverallsille
+        env:
+          COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_REPO_TOKEN }}
