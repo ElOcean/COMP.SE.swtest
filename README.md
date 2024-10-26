@@ -1,3 +1,4 @@
+[![CI](https://github.com/ElOcean/COMP.SE.swtest/actions/workflows/ci.yml/badge.svg)](https://github.com/ElOcean/COMP.SE.swtest/actions/workflows/ci.yml)
 # Student template
 
 ## Purpose of this repository
