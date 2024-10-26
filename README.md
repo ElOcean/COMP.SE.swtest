@@ -1,5 +1,6 @@
-[![CI](https://github.com/ElOcean/COMP.SE.swtest/actions/workflows/ci.yml/badge.svg)](https://github.com/ElOcean/COMP.SE.swtest/actions/workflows/ci.yml)
-# Student template
+[![CI](https://github.com/ElOcean/COMP.SE.swtest/actions/workflows/ci.yml/badge.svg)](https://github.com/ElOcean/COMP.SE.swtest/actions/workflows/ci.yml) <a href='https://coveralls.io/github/ElOcean/COMP.SE.swtest'><img src='https://coveralls.io/repos/github/ElOcean/COMP.SE.swtest/badge.svg' alt='Coverage Status' /></a>
+
+# Elmeri & Paulus
 
 ## Purpose of this repository
 
