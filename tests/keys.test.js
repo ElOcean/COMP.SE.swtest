@@ -1,1 +1,2 @@
-//this is test to trigger CI
+//this is a new test to trigger CI
+test(); 
