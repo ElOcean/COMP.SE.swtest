@@ -15,5 +15,11 @@
     "coveralls": "^3.1.1",
     "mocha": "^10.7.3",
     "nyc": "^17.1.0"
+  },
+  "nyc": {
+    "include": ["src/**/*.js"], 
+    "exclude": ["test/**/*.js","src/.internal/*.js"], 
+    "reporter": ["text", "lcov"],
+    "all": true
   }
 }
