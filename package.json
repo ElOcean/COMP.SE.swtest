@@ -3,23 +3,31 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "test": "mocha",
-    "coverage": "nyc --reporter=lcov --reporter=text mocha && nyc report --reporter=text-lcov | coveralls"
+    "coverage": "nyc --require @babel/register --reporter=lcov --reporter=text mocha && nyc report --reporter=text-lcov | coveralls"
   },
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "@babel/register": "^7.25.9",
+    "babel-plugin-istanbul": "^7.0.0",
     "chai": "^5.1.2",
     "coveralls": "^3.1.1",
     "mocha": "^10.7.3",
     "nyc": "^17.1.0"
   },
   "nyc": {
-    "include": ["src/**/*.js"], 
-    "exclude": ["test/**/*.js","src/.internal/*.js"], 
+    "include": ["src/**/*.js"],
+    "exclude": ["test/**/*.js", "src/.internal/"],
     "reporter": ["text", "lcov"],
-    "all": true
+    "all": true,
+    "extension": [".js"]
+  },
+  "babel": {
+    "presets": ["@babel/preset-env"],
+    "plugins": ["babel-plugin-istanbul"]
   }
 }
