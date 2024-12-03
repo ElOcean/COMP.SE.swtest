@@ -1,0 +1,17 @@
+function cov_2aubrajhc3(){var path="/Users/macepo/TTY/softatestaus/COMP.SE.swtest/src/isArguments.js";var hash="b91f24ae1237c54cafcc9dca51822bf1a3038e05";var global=new Function("return this")();var gcv="__coverage__";var coverageData={path:"/Users/macepo/TTY/softatestaus/COMP.SE.swtest/src/isArguments.js",statementMap:{"0":{start:{line:20,column:2},end:{line:20,column:69}}},fnMap:{"0":{name:"isArguments",decl:{start:{line:19,column:9},end:{line:19,column:20}},loc:{start:{line:19,column:28},end:{line:21,column:1}},line:19}},branchMap:{"0":{loc:{start:{line:20,column:9},end:{line:20,column:69}},type:"binary-expr",locations:[{start:{line:20,column:9},end:{line:20,column:28}},{start:{line:20,column:32},end:{line:20,column:69}}],line:20}},s:{"0":0},f:{"0":0},b:{"0":[0,0]},_coverageSchema:"1a1c01bbd47fc00a2c39e90264f33305004495a9",hash:"b91f24ae1237c54cafcc9dca51822bf1a3038e05"};var coverage=global[gcv]||(global[gcv]={});if(!coverage[path]||coverage[path].hash!==hash){coverage[path]=coverageData;}var actualCoverage=coverage[path];{// @ts-ignore
+cov_2aubrajhc3=function(){return actualCoverage;};}return actualCoverage;}cov_2aubrajhc3();import getTag from'./.internal/getTag.js';import isObjectLike from'./isObjectLike.js';/**
+ * Checks if `value` is likely an `arguments` object.
+ *
+ * @since 0.1.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is an `arguments` object, else `false`.
+ * @example
+ *
+ * isArguments(function() { return arguments }())
+ * // => true
+ *
+ * isArguments([1, 2, 3])
+ * // => false
+ */function isArguments(value){cov_2aubrajhc3().f[0]++;cov_2aubrajhc3().s[0]++;return(cov_2aubrajhc3().b[0][0]++,isObjectLike(value))&&(cov_2aubrajhc3().b[0][1]++,getTag(value)=='[object Arguments]');}export default isArguments;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJjb3ZfMmF1YnJhamhjMyIsImFjdHVhbENvdmVyYWdlIiwiZ2V0VGFnIiwiaXNPYmplY3RMaWtlIiwiaXNBcmd1bWVudHMiLCJ2YWx1ZSIsImYiLCJzIiwiYiJdLCJzb3VyY2VzIjpbImlzQXJndW1lbnRzLmpzIl0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBnZXRUYWcgZnJvbSAnLi8uaW50ZXJuYWwvZ2V0VGFnLmpzJ1xuaW1wb3J0IGlzT2JqZWN0TGlrZSBmcm9tICcuL2lzT2JqZWN0TGlrZS5qcydcblxuLyoqXG4gKiBDaGVja3MgaWYgYHZhbHVlYCBpcyBsaWtlbHkgYW4gYGFyZ3VtZW50c2Agb2JqZWN0LlxuICpcbiAqIEBzaW5jZSAwLjEuMFxuICogQGNhdGVnb3J5IExhbmdcbiAqIEBwYXJhbSB7Kn0gdmFsdWUgVGhlIHZhbHVlIHRvIGNoZWNrLlxuICogQHJldHVybnMge2Jvb2xlYW59IFJldHVybnMgYHRydWVgIGlmIGB2YWx1ZWAgaXMgYW4gYGFyZ3VtZW50c2Agb2JqZWN0LCBlbHNlIGBmYWxzZWAuXG4gKiBAZXhhbXBsZVxuICpcbiAqIGlzQXJndW1lbnRzKGZ1bmN0aW9uKCkgeyByZXR1cm4gYXJndW1lbnRzIH0oKSlcbiAqIC8vID0+IHRydWVcbiAqXG4gKiBpc0FyZ3VtZW50cyhbMSwgMiwgM10pXG4gKiAvLyA9PiBmYWxzZVxuICovXG5mdW5jdGlvbiBpc0FyZ3VtZW50cyh2YWx1ZSkge1xuICByZXR1cm4gaXNPYmplY3RMaWtlKHZhbHVlKSAmJiBnZXRUYWcodmFsdWUpID09ICdbb2JqZWN0IEFyZ3VtZW50c10nXG59XG5cbmV4cG9ydCBkZWZhdWx0IGlzQXJndW1lbnRzXG4iXSwibWFwcGluZ3MiOiJraENBZVk7QUFBQUEsY0FBQSxTQUFBQSxDQUFBLFNBQUFDLGNBQUEsV0FBQUEsY0FBQSxFQUFBRCxjQUFBLEdBZlosTUFBTyxDQUFBRSxNQUFNLEtBQU0sdUJBQXVCLENBQzFDLE1BQU8sQ0FBQUMsWUFBWSxLQUFNLG1CQUFtQixDQUU1QztBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0EsR0FDQSxRQUFTLENBQUFDLFdBQVdBLENBQUNDLEtBQUssQ0FBRSxDQUFBTCxjQUFBLEdBQUFNLENBQUEsTUFBQU4sY0FBQSxHQUFBTyxDQUFBLE1BQzFCLE1BQU8sQ0FBQVAsY0FBQSxHQUFBUSxDQUFBLFNBQUFMLFlBQVksQ0FBQ0UsS0FBSyxDQUFDLElBQUFMLGNBQUEsR0FBQVEsQ0FBQSxTQUFJTixNQUFNLENBQUNHLEtBQUssQ0FBQyxFQUFJLG9CQUFvQixFQUNyRSxDQUVBLGNBQWUsQ0FBQUQsV0FBVyIsImlnbm9yZUxpc3QiOltdfQ==

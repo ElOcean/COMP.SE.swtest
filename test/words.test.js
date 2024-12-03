@@ -1,5 +1,5 @@
-import { expect } from 'chai';
 import words from '../src/words.js';
+import { expect } from 'chai';
 
 describe('words', () => {
 
@@ -39,4 +39,4 @@ describe('words', () => {
       expect(words(' a .b  c1, d23?? !!4ef  g[56  h7]8 # " 9@£0i¤jk &lm')).to.deep.equal(['a', 'b', 'c1', 'd23', '4ef', 'g', '56', 'h7', '8', '9', '0i', 'jk', 'lm']);
   });
 
-});
+})

@@ -1,0 +1,17 @@
+function cov_vg2gtck7l(){var path="/Users/macepo/TTY/softatestaus/COMP.SE.swtest/src/at.js";var hash="8fa77d1204d75ccd788208ff542a8ac3e402adb2";var global=new Function("return this")();var gcv="__coverage__";var coverageData={path:"/Users/macepo/TTY/softatestaus/COMP.SE.swtest/src/at.js",statementMap:{"0":{start:{line:19,column:11},end:{line:19,column:70}},"1":{start:{line:19,column:33},end:{line:19,column:70}}},fnMap:{"0":{name:"(anonymous_0)",decl:{start:{line:19,column:11},end:{line:19,column:12}},loc:{start:{line:19,column:33},end:{line:19,column:70}},line:19}},branchMap:{},s:{"0":0,"1":0},f:{"0":0},b:{},_coverageSchema:"1a1c01bbd47fc00a2c39e90264f33305004495a9",hash:"8fa77d1204d75ccd788208ff542a8ac3e402adb2"};var coverage=global[gcv]||(global[gcv]={});if(!coverage[path]||coverage[path].hash!==hash){coverage[path]=coverageData;}var actualCoverage=coverage[path];{// @ts-ignore
+cov_vg2gtck7l=function(){return actualCoverage;};}return actualCoverage;}cov_vg2gtck7l();import baseAt from'./.internal/baseAt.js';import baseFlatten from'./.internal/baseFlatten.js';/**
+ * Creates an array of values corresponding to `paths` of `object`.
+ *
+ * @since 1.0.0
+ * @category Object
+ * @param {Object} object The object to iterate over.
+ * @param {...(string|string[])} [paths] The property paths to pick.
+ * @returns {Array} Returns the picked values.
+ * @example
+ *
+ * const object = { 'a': [{ 'b': { 'c': 3 } }, 4] }
+ *
+ * at(object, ['a[0].b.c', 'a[1]'])
+ * // => [3, 4]
+ */cov_vg2gtck7l().s[0]++;const at=(object,...paths)=>{cov_vg2gtck7l().f[0]++;cov_vg2gtck7l().s[1]++;return baseAt(object,baseFlatten(paths,1));};export default at;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJjb3ZfdmcyZ3RjazdsIiwiYWN0dWFsQ292ZXJhZ2UiLCJiYXNlQXQiLCJiYXNlRmxhdHRlbiIsInMiLCJhdCIsIm9iamVjdCIsInBhdGhzIiwiZiJdLCJzb3VyY2VzIjpbImF0LmpzIl0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBiYXNlQXQgZnJvbSAnLi8uaW50ZXJuYWwvYmFzZUF0LmpzJ1xuaW1wb3J0IGJhc2VGbGF0dGVuIGZyb20gJy4vLmludGVybmFsL2Jhc2VGbGF0dGVuLmpzJ1xuXG4vKipcbiAqIENyZWF0ZXMgYW4gYXJyYXkgb2YgdmFsdWVzIGNvcnJlc3BvbmRpbmcgdG8gYHBhdGhzYCBvZiBgb2JqZWN0YC5cbiAqXG4gKiBAc2luY2UgMS4wLjBcbiAqIEBjYXRlZ29yeSBPYmplY3RcbiAqIEBwYXJhbSB7T2JqZWN0fSBvYmplY3QgVGhlIG9iamVjdCB0byBpdGVyYXRlIG92ZXIuXG4gKiBAcGFyYW0gey4uLihzdHJpbmd8c3RyaW5nW10pfSBbcGF0aHNdIFRoZSBwcm9wZXJ0eSBwYXRocyB0byBwaWNrLlxuICogQHJldHVybnMge0FycmF5fSBSZXR1cm5zIHRoZSBwaWNrZWQgdmFsdWVzLlxuICogQGV4YW1wbGVcbiAqXG4gKiBjb25zdCBvYmplY3QgPSB7ICdhJzogW3sgJ2InOiB7ICdjJzogMyB9IH0sIDRdIH1cbiAqXG4gKiBhdChvYmplY3QsIFsnYVswXS5iLmMnLCAnYVsxXSddKVxuICogLy8gPT4gWzMsIDRdXG4gKi9cbmNvbnN0IGF0ID0gKG9iamVjdCwgLi4ucGF0aHMpID0+IGJhc2VBdChvYmplY3QsIGJhc2VGbGF0dGVuKHBhdGhzLCAxKSlcblxuZXhwb3J0IGRlZmF1bHQgYXRcbiJdLCJtYXBwaW5ncyI6IisyQkFlWTtBQUFBQSxhQUFBLFNBQUFBLENBQUEsU0FBQUMsY0FBQSxXQUFBQSxjQUFBLEVBQUFELGFBQUEsR0FmWixNQUFPLENBQUFFLE1BQU0sS0FBTSx1QkFBdUIsQ0FDMUMsTUFBTyxDQUFBQyxXQUFXLEtBQU0sNEJBQTRCLENBRXBEO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQSxHQWRBSCxhQUFBLEdBQUFJLENBQUEsTUFlQSxLQUFNLENBQUFDLEVBQUUsQ0FBR0EsQ0FBQ0MsTUFBTSxDQUFFLEdBQUdDLEtBQUssR0FBSyxDQUFBUCxhQUFBLEdBQUFRLENBQUEsTUFBQVIsYUFBQSxHQUFBSSxDQUFBLGFBQUFGLE1BQU0sQ0FBQ0ksTUFBTSxDQUFFSCxXQUFXLENBQUNJLEtBQUssQ0FBRSxDQUFDLENBQUMsQ0FBQyxDQUFELENBQUMsQ0FFdEUsY0FBZSxDQUFBRixFQUFFIiwiaWdub3JlTGlzdCI6W119
