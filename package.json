@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "mocha",
-    "coverage": "nyc --require @babel/register mocha && nyc report --reporter=text-lcov | coveralls"
+    "coverage": "c8 --reporter=lcov --reporter=text --require @babel/register mocha"
   },
   "author": "",
   "license": "MIT",
@@ -15,31 +15,23 @@
     "@babel/preset-env": "^7.26.0",
     "@babel/register": "^7.25.9",
     "babel-plugin-istanbul": "^7.0.0",
+    "c8": "^10.1.2",
     "chai": "^5.1.2",
     "coveralls": "^3.1.1",
-    "mocha": "^10.7.3",
-    "nyc": "^17.1.0"
+    "mocha": "^10.7.3"
   },
-  "nyc": {
-    "include": [
-      "src/**/*.js"
-    ],
-    "exclude": [
-      "test/**/*.js",
-      "src/.internal/"
-    ],
-    "reporter": [
-      "text",
-      "lcov"
-    ],
-    "all": true,
-    "extension": [
-      ".js"
-    ],
-    "check-coverage": false
+  "c8": {
+    "include": ["src/**/*.js"],
+    "exclude": ["test/**/*.js", "src/.internal/"],
+    "reporter": ["text", "lcov"],
+    "check-coverage": true
   },
   "babel": {
-    "presets": ["@babel/preset-env"],
-    "plugins": ["babel-plugin-istanbul"]
+    "presets": [
+      "@babel/preset-env"
+    ],
+    "plugins": [
+      "babel-plugin-istanbul"
+    ]
   }
 }
