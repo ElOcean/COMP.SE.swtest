@@ -11,6 +11,11 @@ describe('words', () => {
       expect(words('abc')).to.deep.equal(['abc']);
   });
 
+  it('should split a string into words ', () => {
+    const result = words('fred, barney, & pebbles', /[^, ]+/g);
+    expect(result).to.deep.equal(['fred', 'barney', '&', 'pebbles']);
+  });
+
   it('should return an array with a single numeric word for a string of numeric characters', () => {
     expect(words('123')).to.deep.equal(['123']);
   });
@@ -23,12 +28,12 @@ describe('words', () => {
       expect(words('  1 23   4      567      ')).to.deep.equal(['1', '23', '4', '567']);
   });
 
-  it('should return an array of alphanumeric words for a string of random alphanumeric characters and spaces', () => {
+  it('should return an array of alphanumeric words separating the spaces', () => {
       expect(words('  a b 1  cd2  e  3  f gh456  7i8j 90kl m ')).to.deep.equal(['a', 'b', '1', 'cd2', 'e', '3', 'f', 'gh456', '7i8j', '90kl', 'm']);
   });
 
   it('should return an empty array for a string of special characters', () => {
-      expect(words('#!?,.')).to.deep.equal([]);
+      expect(words('#!?,.@£%')).to.deep.equal([]);
   });
 
   it('should return an empty array for a string of random special characters and spaces', () => {
