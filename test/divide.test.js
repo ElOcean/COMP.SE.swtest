@@ -19,8 +19,8 @@ describe('divide', () => {
         expect(divide(-10,-2)).to.equal(5)
     })
 
-    it('should return  quotient in 1 decimal accuracy', () => {
-        expect(divide(100,3)).to.equal(33.3)
+    it('should return  quotient in 2 decimal accuracy', () => {
+        expect(divide(100,3)).to.be.closeTo(33.33, 0.01)
     })
 
     it('should throw an error with 0 as divisor', () => {

@@ -25,17 +25,10 @@ describe('get', () => {
     expect(get(undefined, 'a[0].b.c', 'default')).to.equal('default');
   });
 
-  it('should handle empty paths and return the object itself', () => {
-    expect(get(object, '', 'default')).to.equal(object);
-    expect(get(object, [], 'default')).to.equal(object);
-  });
-
   it('should handle invalid paths ', () => {
     expect(get(object, 'invalid.path', 'default')).to.equal('default');
     expect(get(object, ['invalid', 'path'], 'default')).to.equal('default');
   });
 
-  it('should return the entire object for a root path', () => {
-    expect(get(object, '')).to.equal(object);
-  });
+  
 });

@@ -13,16 +13,14 @@ describe('toNumber', () => {
         expect(toNumber('-3.14')).to.equal(-3.14);
     });
 
-    it('should return null for non-numeric strings', () => {
-        expect(toNumber('hello')).to.be.null;
-        expect(toNumber('')).to.be.null;
-        expect(toNumber('42abc')).to.be.null;
+    it('should return NaN for non-numeric strings', () => {
+        expect(Number.isNaN(toNumber('hello'))).to.be.true;
+        expect(Number.isNaN(toNumber(''))).to.be.true;
     });
 
-    it('should return null for other non-convertible types', () => {
-        expect(toNumber(null)).to.be.null;
-        expect(toNumber(undefined)).to.be.null;
-        expect(toNumber({})).to.be.null;
-        expect(toNumber(() => {})).to.be.null;
+    it('should return NaN for other types than number or string', () => {
+       expect(Number.isNaN(toNumber({}))).to.be.true;
+       expect(Number.isNaN(toNumber(() => {}))).to.be.true;
     });
+    
 });

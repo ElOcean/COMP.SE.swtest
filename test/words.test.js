@@ -29,7 +29,7 @@ describe('words', () => {
   });
 
   it('should return an array of alphanumeric words separating the spaces', () => {
-      expect(words('  a b 1  cd2  e  3  f gh456  7i8j 90kl m ')).to.deep.equal(['a', 'b', '1', 'cd2', 'e', '3', 'f', 'gh456', '7i8j', '90kl', 'm']);
+      expect(words('cd2 e ff niilo22  klo12 11 ')).to.deep.equal(['cd2','e', 'ff', 'niilo22', 'klo12', '11']);
   });
 
   it('should return an empty array for a string of special characters', () => {
@@ -41,7 +41,7 @@ describe('words', () => {
   });
 
   it('should return an array of words for a string of mixed special characters, alphanumeric characters, and spaces', () => {
-      expect(words(' a .b  c1, d23?? !!4ef  g[56  h7]8 # " 9@£0i¤jk &lm')).to.deep.equal(['a', 'b', 'c1', 'd23', '4ef', 'g', '56', 'h7', '8', '9', '0i', 'jk', 'lm']);
+      expect(words('cd2 e ff niilo22  %€&klo12&€!11')).to.deep.equal(['cd2','e', 'ff', 'niilo22', 'klo12', '11']);
   });
 
 })

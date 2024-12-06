@@ -33,5 +33,7 @@ function keys(object) {
     ? arrayLikeKeys(object)
     : Object.keys(Object(object))
 }
+const obj1={ 42: 'foo', 1: 'bar', 3: 'baz' };
+console.log(keys(obj1))
 
 export default keys

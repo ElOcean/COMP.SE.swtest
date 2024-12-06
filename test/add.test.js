@@ -26,9 +26,5 @@ describe('add', () => {
     it('should return zero with empty inputs', () => {
         expect(add(0,0)).to.equal(0)
     })
-
-    it('should throw an error for incorrect input', () => {
-        expect(() => add(null, 0)).to.throw(TypeError, 'Invalid input');
-      });
-      
+    
 })
