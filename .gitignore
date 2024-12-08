@@ -1,0 +1,8 @@
+node_modules/
+
+# Coverage reports
+coverage/
+.nyc_output/
+
+# Instrumented source code (for coverage tools like istanbul/nyc)
+instrumented-src/
