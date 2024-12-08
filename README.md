@@ -1,5 +1,5 @@
 [![CI](https://github.com/ElOcean/COMP.SE.swtest/actions/workflows/ci.yml/badge.svg)](https://github.com/ElOcean/COMP.SE.swtest/actions/workflows/ci.yml) 
-[![Coverage Status](https://coveralls.io/repos/github/ElOcean/COMP.SE.swtest/badge.svg)](https://coveralls.io/github/ElOcean/COMP.SE.swtest)
+[![Coverage Status] https://coveralls.io/repos/github/ElOcean/COMP.SE.swtest/badge.svg?branch=main(Coverage Status)!:https://coveralls.io/github/ElOcean/COMP.SE.swtest?branch=main
 
 # Elmeri & Paulus
 
